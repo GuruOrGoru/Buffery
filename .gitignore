@@ -1,0 +1,104 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# --- Go build artifacts ---
+bin/
+build/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# --- Go modules ---
+vendor/
+go.work
+go.work.sum
+
+# --- Logs and temp files ---
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.old
+*.cache/
+tmp/
+cache/
+
+# --- Environment files ---
+.env
+.env.*
+!.env.example
+
+# --- Dependency management ---
+coverage.out
+coverage.txt
+
+# --- IDE/editor files ---
+.vscode/
+.idea/
+*.iml
+*.sublime*
+*.code-workspace
+
+# --- OS-specific files ---
+.DS_Store
+Thumbs.db
+
+# --- Docker ---
+/docker-compose.override.yml
+/.docker/
+**/.env.docker
+
+# --- Testing ---
+test-results/
+*.coverprofile
+*.testresult
+
+# --- Misc ---
+node_modules/    # (in case you use frontend or web assets)
+dist/
+public/uploads/
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+app-example
+
+# generated native folders
+/ios
+/android
