@@ -26,3 +26,11 @@ func GetHost() (string, error) {
 	}
 	return host, nil
 }
+
+func GetDbURL() (string, error) {
+	url := os.Getenv("DB_URL")
+	if url == "" {
+		return "", errors.New("ENV DB_URL not set in .env")
+	}
+	return url, nil
+}
